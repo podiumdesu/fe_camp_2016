@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999.xhtml">
+<head id="body">                     <!--id body-->
+    <meta charset="utf-8">
+	<title>task0002小新和巴卫</title>
+	<link rel="stylesheet" type="text/css" href="./css/xxbw.css">  <!--插入css-->
+
+</head>
+
+
+<div id="imagebox">                    <!--id "imagebox"-->
+    <img id="image" src="img/xx.png">  <!--img id "image"-->
+</div>
+<div id="buttonbox">                    <!--id "buttonbox"-->
+    <div class="button">                  <!--class "button"-->
+	    <button id="btnxx">小新</button>    <!--btn id "btnxx"-->
+	</div>
+	<div class="button">
+	    <button id="btnbw">巴卫</button>    <!--btn id "btnbw"-->
+	</div>
+</div>
+
+
+<body>
+<script>
+    /*var btn_change=document.getElementByTagName("button");*/
+	var xx=document.getElementById("btnxx");
+	var bw=document.getElementById("btnbw");
+	var img_change=document.getElementById("image");
+	/*var bg_image=document.getElementById("background")*/
+	/*for(var i=btn_change.length-1;i>0/i--)
+	{
+		btn_change[i].onclick=function(){
+			change(this.id)
+		}
+	}
+	function change(id){
+    img_change.setAttribute("src","img/"+d+".png");
+    bg_image.style.background="url(img/"+id+"-bg.png)";
+	}*/
+	xx.onclick=function(){
+		image.setAttribute("src","img/xx.png");
+		xx.style.background="url(img/btn-blue.png)";
+		bw.style.background="url(img/btn-gray.png)";
+		document.body.style.background="url(\"img/xx-bg.png\")";
+	}
+	bw.onclick=function()
+	{
+		image.setAttribute("src","img/bw.png");
+		xx.style.background="url(img/btn-gray.png)";
+		bw.style.background="url(img/btn-blue.png)";
+		document.body.style.background="url(\"img/bw-bg.png\")";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+	background-image: url("../img/xx-bg.png");
+	background-size: cover;
+	padding-top: 5%;
+	margin: 0;
+	/*background-repeat: no-repeat;*/
+}
+
+div{
+	margin: 0;
+}
+#imagebox
+{
+	padding-top: 0px;
+	padding-bottom: 200px;
+	padding-left: 200px;
+	border:0;
+	float: left;
+	width: 60%
+	text-align:center;
+    margin: 200px;
+}
+#buttonbox
+{
+    padding-top: 200px;
+    padding-bottom: 60px;
+    width: 40%;
+    float: right;
+}
+
+div.button{
+	padding-bottom: 10px;
+	padding-top: 90px
+}
+#image{
+	width: 355px;
+	height: 434px;
+}
+
+button{
+	border: 0;
+	width: 240px;
+	height: 49px;
+	font-size: 25px;
+	cursor: pointer;
+	background: -webkit-radial-gradient(circle,green,yellow);
+}
+
+#btnxx{
+	background-image: url(../img/btn-blue.png);
+
+}
+#btnbw{
+	background-image: url(../img/btn-gray.png);
+}
+
+
+
+
+
+
+
