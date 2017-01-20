@@ -1,0 +1,238 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+@media only screen and (max-width:1280px) {
+body{
+      background: url(../images/4.jpg)white no-repeat center;
+}
+
+.nav{
+  display: table-caption;
+}
+.footer{
+  display: inline;
+  position: fixed;
+  right: 10px ;
+  top: 10px;
+  border: 5px dashed pink;
+  padding: 10px;
+}
+.footer a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+li{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+p{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.basic li{
+  width: 180px;
+}
+
+.basic2 li{
+  width: 360px;
+}
+
+.basic3 li,.basic3 p{
+  width: 720px;
+}
+
+.name{
+  position: relative;
+  height: 200px;
+  margin-top: 150px;
+}
+
+
+.nav li ,.nav2 li{
+  font-size: 30px;
+}
+.nav3 li,.nav3 p{
+  font-size: 30px;
+}
+
+.nav,.nav2,.nav3{
+  display: inline-block;
+  align-items: center;
+  display: table-cell;
+}
+.name{
+  align-items: center;
+}
+
+
+.basic li ,.basic2 li,.basic3 li,.basic3 p{
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+}
+.basic3 a{
+  text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width:1680px){
+body{
+      background: url(../images/1.jpg) no-repeat ;
+}
+.footer{
+  position: fixed;
+  right: 40px ;
+  bottom: 40px;
+  border: 5px dashed purple;
+  padding: 10px;
+}
+.footer a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+li{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+p{
+  text-align: center;
+  vertical-align: middle;
+}
+.basic li{
+  width: 250px;
+}
+
+.basic2 li{
+  width: 500px;
+}
+
+.basic3 li,.basic3 p{
+  width: 1000px;
+}
+
+.name{
+  position: relative;
+  height: 250px;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+
+.nav li ,.nav2 li{
+  font-size: 30px;
+}
+.nav3 li,.nav3 p{
+  font-size: 30px;
+}
+.basic ,.basic2 ,.basic3{
+  margin-left: 280px;
+}
+
+.basic li ,.basic2 li,.basic3 li,.basic3 p{
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+}
+.basic3 a{
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width:1680px) and (min-width:1280px){
+body{
+      background: url(../images/1.jpg) no-repeat ;
+}
+.footer{
+  position: fixed;
+  right: 20px ;
+  top: 20px;
+  border: 5px dashed purple;
+  padding: 10px;
+}
+.footer a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+
+
+
+li{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+p{
+  text-align: center;
+  vertical-align: middle;
+}
+.basic li{
+  width: 250px;
+}
+
+.basic2 li{
+  width: 500px;
+}
+
+.basic3 li,.basic3 p{
+  width: 1000px;
+}
+
+.name{
+  position: relative;
+  height: 250px;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+
+.nav li ,.nav2 li{
+  font-size: 30px;
+}
+.nav3 li,.nav3 p{
+  font-size: 30px;
+}
+.basic ,.basic2 ,.basic3{
+  margin-left: 180px;
+}
+
+.basic li ,.basic2 li,.basic3 li,.basic3 p{
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.basic3 a{
+  text-decoration: none;
+}
