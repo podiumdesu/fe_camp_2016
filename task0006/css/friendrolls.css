@@ -4,6 +4,7 @@
   bottom: 0
 }
 
+@media only screen and (min-width:1380px) {
 body{
   background: url(../images/2.png);
 }
@@ -45,6 +46,7 @@ nav li .selected{
   color: rgba(255,255,255,1);
 
 }
+nav .title{
   background: transparent;
 
 }
@@ -56,14 +58,7 @@ div ul{
   list-style: none;
 }
 
-div span{
-  border: 0;
-  transition: right .5s ease;
-}
-div span:hover{
-  cursor: pointer;
-  border-bottom: 1px solid black;
-}
+
 nav div.logo , nav p.title{
   display: inline-block;
 
@@ -78,6 +73,52 @@ nav div.logo a{
   text-decoration: none;
 }
 
+
+div.content{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50px;
+
+}
+
+div ul li a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+div ul{
+  list-style-type: georgian;
+  color: coral;
+}
+
+
+div.content{
+  position: relative;
+  margin-top: 80px;
+  margin-left: 360px;
+
+}
+div ul li {
+  margin-top: 40px;
+}
+div ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(20,23,20,0.7);
+  transition: all .5s ease;
+}
+div ul li a:hover{
+  color: rgba(20,23,20,1)
+}
+
+div ul li p{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 17px;
+  color: #0A5C4F;
+  border: 0.5px dashed coral;
+}
 footer{
   background-color: transparent;
   text-align: center;
@@ -90,7 +131,6 @@ footer{
 footer p{
   display: inline;
 }
-
 footer p{
   color: rgba(230,230,230,0.4);
   transition: all 1s ease;
@@ -98,4 +138,146 @@ footer p{
 
 footer p:hover{
   color: rgba(255,255,255,0.8);
+}
+
+}
+@media only screen and (max-width:1380px) {
+  body{
+    background: url(../images/6.png);
+
+  }
+  nav{
+    position: fixed;
+    top:0;
+    display: table;
+    line-height: 25px;
+    width: 100%;
+
+
+  }
+
+  nav div.logo{
+    position: fixed;
+    margin-left: 0;
+    top:-30px;
+    display: table-cell;
+
+  }
+
+
+  nav ul {
+    list-style: none;
+    margin-top: 18px;
+    margin-left: 80px;
+
+  }
+  nav ul li{
+    list-style: none;
+  }
+  nav ul li{
+    display: table-cell;
+
+  }
+  nav li a{
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 100px ;
+
+
+  }
+  nav  li a{
+    position: relative;
+    color: rgba(255,255,255,0.3);
+    transition: all 1s ease;
+    text-decoration: none;
+  }
+
+
+  nav ul a:hover{
+    color: rgba(1255,255,255,1);
+
+  }
+  nav li .selected{
+    color: rgba(255,255,255,1);
+
+  }
+  nav ul a.selected::before,a.selected::after,a.selected:hover::before,a.selected:hover::after{
+    display: none;
+  }
+  nav ul a::before,a::after{
+    position: absolute;
+    transition: all .5s ease;
+
+  }
+  nav ul a::before{
+    content: "\5B";
+    left: -15px;
+  }
+  nav ul a::after{
+    content: "\5D";
+    right: 18px;
+  }
+  nav ul a:hover::before,a:hover::after{
+    position: absolute;
+  }
+  nav ul a:hover::before {
+  content: "\5B";
+  left: -40px;
+  }
+  nav ul a:hover::after {
+  content: "\5D";
+  right: -15px;
+  }
+
+  div ul{
+    list-style-type: georgian;
+    color: coral;
+  }
+
+
+  div.content{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 160px;
+
+  }
+  div ul li {
+    margin-top: 20px;
+  }
+  div ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(200,230,200,1);
+  }
+
+  div ul li p{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    color: lightblue;
+    border: 0.5px dashed pink;
+  }
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+  footer p{
+    display: inline;
+  }
+
+  footer p{
+    color: rgba(231,231,231,0.4);
+    transition: all 1s ease;
+  }
+
+  footer p:hover{
+    color: rgba(251,251,251,0.8);
+  }
+
 }

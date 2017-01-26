@@ -3,8 +3,40 @@
   padding: 0;
 }
 
+a {
+  position: relative;
+}
+a::before,a::after{
+  position: absolute;
+  transition: all .5s ease;
 
+}
+a::before{
+  content: "\5B";
+  left: 180px;
+}
+a::after{
+  content: "\5D";
+  right: 180px;
+}
+a:hover::before,a:hover::after{
+  position: absolute;
+}
+a:hover::before {
+content: "\5B";
+left: 160px;
+}
+a:hover::after {
+content: "\5D";
+right: 160px;
+}
 
+@media only screen and (max-width:1480px) {
+  a::after,a::before,a:hover::after,a:hover::before{
+    display: none;
+  }
+
+}
 @media only screen and (max-width:1850px) {
 
 
@@ -27,7 +59,6 @@ nav{
 nav a{
   background: transparent;
   display: table-cell;
-  margin: 10px 20px;
   font-size: 25px;
   text-decoration: none;
   color: rgba(193,205,193,0.3);
