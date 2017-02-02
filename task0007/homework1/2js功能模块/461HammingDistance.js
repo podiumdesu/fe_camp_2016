@@ -33,5 +33,5 @@ var hammingDistance = function(x,y){
         n= n>>1;
     }
     return count;
-}
+};
 console.log(hammingDistance(1,4))
