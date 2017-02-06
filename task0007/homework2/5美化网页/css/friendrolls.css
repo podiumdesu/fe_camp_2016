@@ -50,11 +50,11 @@ nav .title{
   background: transparent;
 
 }
-div{
+div.content{
   margin-left: 280px;
 }
 
-div ul{
+div.content ul{
   list-style: none;
 }
 
@@ -81,12 +81,12 @@ div.content{
 
 }
 
-div ul li a{
+div.content ul li a{
   text-decoration: none;
   font-size: 20px;
 }
 
-div ul{
+div.content ul{
   list-style-type: georgian;
   color: coral;
 }
@@ -98,20 +98,20 @@ div.content{
   margin-left: 360px;
 
 }
-div ul li {
+div.content ul li {
   margin-top: 40px;
 }
-div ul li a{
+div.content ul li a{
   text-decoration: none;
   font-size: 25px;
   color: rgba(20,23,20,0.7);
   transition: all .5s ease;
 }
-div ul li a:hover{
+div.content ul li a:hover{
   color: rgba(20,23,20,1)
 }
 
-div ul li p{
+div.content ul li p{
   display: block;
   margin: 10px;
   padding: 10px;
@@ -119,6 +119,61 @@ div ul li p{
   color: #0A5C4F;
   border: 0.5px dashed coral;
 }
+
+
+div#demo{
+  display: relative;
+  margin-left: 360px;
+  margin-top: 100px;
+}
+
+div#demo ul{
+  margin-top: 30px;
+  list-style-type: georgian;
+  color: blue;
+}
+div#demo ul li p,div#demo ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(20,24,20,0.7);
+  transition: all .5s ease;
+  margin-top: 15px;
+}
+
+div#demo ul li span,div#demo ul li output{
+  font-size: 24px;
+  color: rgba(20,25,20,0.8);
+}
+
+div#demo ul li input{
+  border: 1px blue dashed;
+  font-size: 20px;
+}
+
+div#demo ul li button{
+  border: 1px grey solid;
+  font-size: 18px;
+  padding: 3px;
+  margin-left: 20px;
+  color: rgba(20,24,20,0.5);
+  transition: all .5s ease;
+}
+
+div#demo ul li a:hover{
+  color: rgba(20,204,20,0.7);
+}
+
+div#demo ul li p:hover{
+  color: rgba(20,25,204,0.7);
+}
+
+div#demo ul li button:hover{
+  cursor: pointer;
+}
+div#demo ul li button:active{
+    border: 0px;
+}
+
 footer{
   background-color: transparent;
   text-align: center;
@@ -229,7 +284,7 @@ footer p:hover{
   right: -15px;
   }
 
-  div ul{
+  div.content ul{
     list-style-type: georgian;
     color: coral;
   }
@@ -241,16 +296,16 @@ footer p:hover{
     margin-left: 160px;
 
   }
-  div ul li {
+  div.content ul li {
     margin-top: 20px;
   }
-  div ul li a{
+  div.content ul li a{
     text-decoration: none;
     font-size: 25px;
     color: rgba(200,230,200,1);
   }
 
-  div ul li p{
+  div.content ul li p{
     display: block;
     margin: 10px;
     padding: 10px;

@@ -7,8 +7,37 @@
   <title>PetnaKanojo's blog</title>
   <link rel="stylesheet" href="../css/friendrolls.css">
   <link rel="icon" href="../images/logo.png">
+
 </head>
 <body>
+  <script type = "text/javascript" src="../js/friendrolls.js"></script>
+  <script>
+/**  var myname=prompt("请输入你的姓名:");
+  if(myname!=null) {
+    alert("你好"+myname);
+  }
+  else {
+    alert("你好 my friend.");
+  }**/
+
+
+  var x = document.getElementById("field1").value;
+  var y = document.getElementById("field2").value;
+
+  var hammingDistance = function(x,y){
+      var count = 0;
+      var trans = x ^ y ;
+      while ( n> 0 ){
+          if ((n&1)==1){
+              c += 1;
+          }
+          n= n>>1;
+      }
+      alert(count);
+  };
+
+  button.onclick = alert('nihso')
+  </script>
   <head>
     <nav>
       <div class="logo">
@@ -31,6 +60,25 @@
       <a href="https://podiumdesu.github.io" target="_abc">PetnaKanojo</a>
       <p>我自己的博客，用来记录笔记和日常的生活</p>
     </li>
+    </ul>
+  </div>
+  <div id="demo">
+    <h2>demo展示</h2>
+    <ul>
+      <li>
+        <p>
+          demo1：Compute Hamming Distance:&nbsp;&nbsp;<a href="https://github.com/podiumdesu/js/blob/master/leetcode/461HammingDistance.js" target="_abc">源代码</a>
+        </p>
+        <br />
+        <span>第一个数字：<input type="text" id="field1" placeholder="请输入一个数字" />
+        第二个数字：<input type="text" id="field2" placeholder="请再输入一个数字" /></span>
+        <button class="demo1" >提交</button>
+        <p>
+        <span>两个数字间的汉明距离是：</span>
+        <output type = "text" id = "output" >
+        </output>
+        </p>
+      </li>
     </ul>
   </div>
   <footer>
