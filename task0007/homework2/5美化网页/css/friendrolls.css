@@ -150,7 +150,7 @@ div#demo ul li input{
   font-size: 20px;
 }
 
-div#demo ul li button{
+div#demo ul li input#button{
   border: 1px grey solid;
   font-size: 18px;
   padding: 3px;
@@ -167,11 +167,17 @@ div#demo ul li p:hover{
   color: rgba(20,25,204,0.7);
 }
 
-div#demo ul li button:hover{
+div#demo ul li input#button:hover{
   cursor: pointer;
 }
-div#demo ul li button:active{
-    border: 0px;
+div#demo ul li input#button:active{
+  color: rgba(20,24,150,1);
+}
+
+div#demo ul li input{
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
 }
 
 footer{
@@ -313,6 +319,67 @@ footer p:hover{
     color: lightblue;
     border: 0.5px dashed pink;
   }
+
+
+  div#demo{
+    display: relative;
+    margin-left: 160px;
+    margin-top: 100px;
+  }
+
+  div#demo ul{
+    margin-top: 30px;
+    list-style-type: georgian;
+    color: coral;
+  }
+  div#demo ul li p,div#demo ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(200,230,200,1);
+    transition: all .5s ease;
+    margin-top: 15px;
+  }
+
+  div#demo ul li span,div#demo ul li output{
+    font-size: 24px;
+    color: lightblue;
+  }
+
+  div#demo ul li input{
+    border: 1px blue dashed;
+    font-size: 20px;
+  }
+
+  div#demo ul li input#button{
+    border: 1px grey solid;
+    font-size: 18px;
+    padding: 3px;
+    margin-left: 20px;
+    color: rgba(20,24,20,0.5);
+    transition: all .5s ease;
+  }
+
+  div#demo ul li a:hover{
+    color: rgba(20,204,20,0.7);
+  }
+
+  div#demo ul li p:hover{
+    color: rgba(20,205,24,0.7);
+  }
+
+  div#demo ul li input#button:hover{
+    cursor: pointer;
+  }
+  div#demo ul li input#button:active{
+    color: rgba(20,24,150,1);
+  }
+
+  div#demo ul li input{
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+  }
+
 footer{
     position:fixed;
     bottom:0;

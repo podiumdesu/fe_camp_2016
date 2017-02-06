@@ -24,28 +24,29 @@
 
 //ver1.0  使用位计算【异或】，一位位的比对该位是否是1，使用计数器进行计数
 
-var x = document.getElementById("field1").value;
-var y = document.getElementById("field2").value;
+/**  var myname=prompt("请输入你的姓名:");
+if(myname!=null) {
+  alert("你好"+myname);
+}
+else {
+  alert("你好 my friend.");
+}**/
+
+function displayme(){
+var x = parseInt(document.getElementById("field1").value);
+var y = parseInt(document.getElementById("field2").value);
 
 var hammingDistance = function(x,y){
     var count = 0;
-    var trans = x ^ y ;
+    var n = x ^ y ;
     while ( n> 0 ){
         if ((n&1)==1){
-            c += 1;
+            count += 1;
         }
-        n= n>>1;
+        n>>=1;
     }
-    alert(count);
+    return count;
 };
 
-button.onclick = function(event){
-    alert('ni');
+document.getElementById("output").value = hammingDistance(x,y);
 }
-
-document.write("I love JavaScript！");
-
-
-document.getElementsByClassName("demo1").
-document.getElementById("output").value= = count;
-document.getElementsByClassName("button").onclick = "alert(‘你的')";
